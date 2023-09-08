@@ -5,15 +5,19 @@ with open('README.md', "r", encoding="utf-8") as f:
 
 __version__ = "0.0.0"
 
-REPO_NAME = "MLOps Project1"
+REPO_NAME = "MLOps_Project1"
 AUTHOR_USER_NAME = "mehmoodaman"
-SRC_REPO = "MLOps Project1"
+SRC_REPO = "MLOps_Project1"
 
 
 setuptools.setup(
-    name=SRC_REPO
-    version=__version__
-    author=AUTHOR_USER_NAME
-    description="an ML project"
+    name=SRC_REPO,
+    version=__version__,
+    author=AUTHOR_USER_NAME,
+    description="an ML project",
+    Long_description=long_description,
+    Long_description_content="text/markdown",
+    package_dir={"": "src"},
+    packages=setuptools.find_packages(where="src")
 )
 
