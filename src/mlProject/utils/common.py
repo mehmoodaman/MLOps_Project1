@@ -7,7 +7,7 @@ import joblib
 from ensure import ensure_annotations
 from box import ConfigBox
 from pathlib import Path
-from typing import AnyStr
+from typing import Any
 
 
 @ensure_annotations
